@@ -1,0 +1,9 @@
+#runing docker
+docker run -d -p 9090:9090 -v ~/data/prometheus-monitoring:/etc/prometheus/promethus.yml prom/prometheus
+
+#runing Grafana
+docker run -d --name grafana -p 3000:3000 grafana/grafana (admin,admin)
+
+
+#Runing node Exporter
+docker run -d --name node-exporter -p 9100:9100 prom/node-exporter
